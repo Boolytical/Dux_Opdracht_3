@@ -4,7 +4,7 @@
 var cityInformation = document.getElementById("cityInformation")
 
 // Define buttons
-addCity.addEventListener('click', function (e) {
+/* addCity.addEventListener('click', function (e) {
     if (document.getElementsByName("City1").value == undefined) {
         document.getElementsByName("City1").innerHTML = document.getElementById("cityName").value;
     } else if (document.getElementsByName("City2").value == undefined &&
@@ -15,10 +15,10 @@ addCity.addEventListener('click', function (e) {
                 document.getElementsByName("City2").value != document.getElementById("cityName").value) {
         document.getElementsByName("City3").innerHTML = document.getElementById("cityName").value;
     }
-})
+}) */
 
 cityInformation.addEventListener('click', function (e) {
-    var cityName = document.getElementById("cityName").value;
+    var cityName = document.getElementById("cityName").value; //Change to pressed City
     if (cityName != "") {
         // API call
         const url = 'https://open-weather13.p.rapidapi.com/city/' + cityName + '/EN';
